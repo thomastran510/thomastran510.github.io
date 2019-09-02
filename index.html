@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<head>
-<title>Thomas's Website</title>
-</head>
+<html>
+    <link rel="stylesheet" type="text/css" href="site.css" >   
+    <head>
+        <title>
+            Thomas Tran's CSC412 Page 
+        </title>
 
-<body>
-<h1>Hello World!<h1>
-<p>Testing changes please excuse</p>
-</body>
+
+    </head>
+
+    <body>
+        <ul id = bar class="navbar">
+            <li><a href="index.html"> Home</a> </li>
+            <li><a href="about.html"> About this site</a></li>  <!-- comment -->
+            <li><a href="current.html"> Current Work</a> </li>
+        </ul>
+        <button onclick="changeColor()"> Change navbar color
+        </button>
+        <script> 
+            function changeColor() {
+                document.getElementById("bar").style.backgroundColor = "green";
+            }
+            </script>
+        <div class='mainbody'>
+            <h1 class="centered sansSerif">Thomas Tran's Home Page </h1>
+            <h2 class="centered sansSerif">This is a practice site by undergraduate student Thomas Tran for CSC 412 Fall 2018! </h2>
+            <p>Thomas enjoys a variety of things including but not limited to:</p>
+            <ol id="interests">
+                <li>Anime</li>
+                <li>Fighting Games</li>
+                <li>Badminton </li>
+                <li>Volleyball </li>
+                <li>And much more! </li>
+                
+            </ol>
+        </div>
+
+    </body>
+</html>
